@@ -4,12 +4,6 @@ A fullstack PokeDex app where users can register, sign in, and collect Pokemon w
 
 ---
 
-## 🔗 Live Demo
-
-[Visit App](https://your-deployed-app-url.com)
-
----
-
 ## 🚀 Features
 
 - User authentication (sign up/sign in)
