@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" type="image/x-icon" sizes="16x16" href="logo.jpg">
+    <link rel="stylesheet" href="styles.css">
+    <title>PokeDex Search</title>
+</head>
+<body>
+
+    <p id="personalName"></p>
+    <h2 id="back">PokeDex Search<img id="icon" src="pokeball.gif" alt="pokeball logo"></h2>
+    <div class="loginSection">
+        <div class="funButton2"><button type="button" onclick="loginPopUpForm()">Login</button></div>
+        <div class="funButton">
+            <button type="button" class="butPop" onclick="popupForm()">Sign Up</button>
+        </div>
+    </div>
+    <div class="popUpWindow" id="myPopUP">
+        <form action="" class="popupCont">
+            <h1>Sign Up</h1>
+
+            <label for="email"><b>Email</b></label>
+            <input type="text" name="Enter Email" name="email" placeholder="Enter Email" id="emaUser">
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" id="pssUser">
+
+            <button type="submit" class="signUpButt" onclick="event.preventDefault(); sendDataUser()">Sign Up</button>
+            <button type="button" class="closeButt" onclick="closePopupForm()">Close</button>
+        </form>
+    </div>
+    <div class="popUpWindow" id="myLogin">
+        <form action="" class="popupCont">
+            <h1>Login</h1>
+
+            <label for="email"><b>Email</b></label>
+            <input type="text" name="Enter Email" name="email" placeholder="Enter Email" id="ema">
+
+            <label for="psw"><b>Password</b></label>
+            <input type="password" placeholder="Enter Password" name="psw" id="pss">
+
+            <button type="submit" class="signUpButt" onclick="event.preventDefault(); loginDataUser()">Login</button>
+            <button type="button" class="closeButt" onclick="closePopupLoginForm()">Close</button>
+        </form>
+    </div>
+    <div id="textbox">
+        <form action="" onsubmit="event.preventDefault(); fetchData();">
+            <label for="" >Pokemon Name</label>
+            <input type="text" name="" id="pokeName" placeholder="Enter name"> <button id="enterB" type="button" onclick="fetchData()">Click Me</button><br>
+        </form>
+    </div>
+    <div class="buttons">
+        <button class="select" type="button" onclick="backDefault(pokeData)">Normal rear</button>
+        <button class="select" type="button" onclick="frontShiny(pokeData)">Shiny front</button>
+        <button class="select" type="button" onclick="backShiny(pokeData)">Shiny rear</button>
+        <button class="select" type="button" onclick="defaultButton(pokeData)">Default</button>
+        <button class="select" type="button" onclick="clear2()">Clear</button>
+        <button class="select" type="button" onclick="playAudio(pokeData)" id="audioFile">Audio</button>
+    </div>
+    <div id="txtBox">
+    </div>
+    
+    <div class="popup"> 
+        <img src="" alt="Pokemon Sprite" id="pokemonSprite">
+    </div>
+
+    <div id="txtBox2">
+    </div>
+
+    <div class="evolutionBox">
+    </div>
+
+
+    
+    <div class="namesBox"></div>
+    <div class="evolBox"></div>
+
+
+    <div id="errorPopup" class="popup2">
+        <p>Pokemon not found</p>
+        <button onclick="closeError()">Click</button>
+    </div>
+
+
+    
+    
+    <!-- <div class="buttons">
+        <button type="button" onclick="fetchData()">Description</button>
+        <p id="dscp"></p>
+    </div> -->
+    <script src="script.js"></script>
+</body>
+</html>
+

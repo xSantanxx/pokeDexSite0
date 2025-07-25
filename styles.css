@@ -1,0 +1,435 @@
+body{
+    /* background-color: rebeccapurple; */
+    background: linear-gradient(to right, grey 50%, red 50%);
+}
+
+#personalName{
+    font-size: 24px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+
+}
+
+#personalName:hover{
+    color: white;
+}
+
+h2{
+    text-align: center;
+    font-size: 30px;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#pokeName{
+    border-radius: 5px;
+}
+
+h2:hover{
+    color: white; 
+    /* color: linear-gradient(to right, red 50%, grey 50%); */
+}
+
+label:hover{
+    color: white;
+}
+
+#icon{
+    width: 100px;
+    height: 100px;
+    border-radius: 75%;
+}
+
+form{
+    margin: 0 auto;
+    width: 250px;
+}
+
+input, label, #enterB {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: fit-content;
+}
+
+label{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 20px;
+}
+
+input{
+    margin-bottom: 20px;
+}
+
+.buttons{
+    text-align: center;
+}
+
+.loginSection{
+    /* display: block;
+    z-index: 10;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: #ccc;
+    border: 2px solid white; */
+
+    display: inline-block;
+    position: fixed;
+    right: 20px;
+    top: 70px;
+    /* transform: translateY(-90%); */
+    width: 300px;
+    height: 50px;
+    background: white;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 50px;
+    overflow-x: auto;
+    box-sizing: border-box;
+    z-index: 10;
+}
+
+/* .popUpWindow{
+    display: none;
+    position: relative;
+    top: 50%;
+    transform: translate(180%,-10%);
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #ccc;
+    background: white;
+    padding: 10px;
+    height: 200px;
+    width: 300px;
+    border-radius: 10px;
+    /* visibility: show; */
+    /* opacity: 1; */
+
+/*sign up button*/
+.butPop{
+
+}
+
+/* form design */
+.popUpWindow{
+    /* display: none; */
+    position: absolute;
+    width: 35%;
+    /* bottom: 15px; */
+    left: 32%;
+    right: 50%;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    z-index: 999;
+    visibility: hidden;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+
+.popupCont{
+    /* max-width: 300px; */
+    width: auto;
+    padding: 10px;
+}
+
+.popupCont input[type=text], .popupCont input[type=password] {
+    width: 100px;
+    padding: 15px;
+    border-radius: 5px;
+    margin: 5px 0 22px 0;
+    border: none;
+    background: #ccc;
+}
+
+.popupCont input[type=text]:focus, .popupCont input[type=password]:focus {
+    background-color: purple;
+    outline: none;
+}
+
+.popupCont .signUpButt{
+    background-color: purple;
+    color: white;
+    padding: 15px 15px;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+    width: 25%;
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+
+.popupCont .closeButt {
+    background-color: purple;
+    color: white;
+    padding: 15px 15px;
+    border: none;
+    border-radius: 5px ;
+    cursor: pointer;
+    width: 25%;
+    margin-bottom: 10px;
+    opacity: 0.8;
+}
+
+.popupCont .signupButt:hover, .butPop:hover {
+    opacity: 1;
+}
+
+
+
+.funButton{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.funButton2{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 60%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+
+.popup{
+    display: flex;
+    height: 300px;
+    width: 300px;
+    border: 2px none white;
+    opacity: 1;
+    border-radius: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+}
+
+.namesBox{
+    display: flex;
+    justify-content: space-evenly;
+    /* text-align: just; */
+    /* text-align-last:justify ; */
+    position: fixed;
+    bottom: 12px;
+    left: 50%;
+    right: 50%;
+    height: auto;
+    transform: translate(-50%, -8%);
+    background-color: red;
+    border: 3px solid #ccc;
+    width: 50em;
+
+    opacity: 1;
+    margin-left: auto;
+    margin-right: auto;
+
+    padding: 2px;
+    /* padding-left: 5px; */
+    background: white;
+    border-radius: 10px;
+    overflow-x: auto;
+    flex-direction: row; 
+
+    white-space: pre;
+
+}
+
+.namesBox p {
+    width: 50%;
+    height: 50%;
+    text-align: center;
+    margin: 5px 0;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    box-sizing: content-box;
+    font-size: 20px;
+}
+
+.evolBox{
+    display: flex;
+    justify-content: space-evenly;
+    /* text-align: just; */
+    /* text-align-last:justify ; */
+    position: fixed;
+    bottom: 15px;
+    left: 50%;
+    right: 50%;
+    height: auto;
+    transform: translate(-50%, 15px);
+    /* background-color: red; */
+    border: 3px solid #ccc;
+    width: 50em;
+
+    opacity: 1;
+    margin-left: auto;
+    margin-right: auto;
+
+    padding: 2px;
+    /* padding-left: 5px; */
+    background: white;
+    border-radius: 10px;
+    overflow-y: auto;
+    flex-direction: row; 
+
+    white-space: pre;
+}
+
+.evolBox p {
+    width: 50%;
+    height: 8px;
+    text-align: center;
+    margin: 5px 0;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    box-sizing: content-box;
+}
+
+
+.evolutionBox{
+    display: none;
+    position: fixed;
+    bottom: 12px;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -10%);
+    /* height: 200px; */
+    /* width: 700px; */
+    width: 50em;
+    /* min-width: 400px; */
+    /* max-height: 100%; */
+
+    border: 3px solid #ccc;
+    opacity: 1;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5px;
+    padding: 2px;
+
+    /* justify-content: space-evenly; */
+    /* align-items: space-; */
+    background: white;
+    border-radius: 10px;
+    overflow-x: auto;
+    flex-direction: row;
+
+    /* justify-content: center; */
+    /* transform: translateX(-50%); */
+}
+
+.evolutionBox::after {
+    padding-top: 5%;
+    display: block;
+    content: '';
+}
+
+
+
+
+
+
+
+
+.popup img{
+    /* flex-shrink: 0; */
+    /* min-width: 100%;
+    min-height: 100%; */
+
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    /* ensures the whole image is visible */
+    max-height: 100%; 
+    /* prevents overflowing */
+}
+
+
+#pokemonSprite #pokemonSprite2{
+    display: none;
+}
+
+
+#txtBox{
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 300px;
+    height: 310px;
+    background: white;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 25px;
+    overflow-y: auto;
+    box-sizing: border-box;
+    z-index: 10;
+}
+
+#txtBox2{
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 300px;
+    height: 310px;
+    background: white;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    padding: 25px;
+    overflow-y: auto;
+    box-sizing: border-box;
+    z-index: 10;
+}
+
+#txtBox2 p {
+    width: 100%;
+    text-align: center;
+    margin: 5px 0;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#txtBox p {
+    width: 100%;
+    text-align: center;
+    margin: 5px 0;
+    padding: 10px;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+#txtBox p:hover{
+    background-color: #e0e0e0;
+}
+
+.popup2{
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* background-color: #ff6b6b; */
+    background: linear-gradient(to right, grey 50%, red 50%);
+    color: white;
+    padding: 15px 25px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+    z-index: 1000;
+    text-align: center;
+}
+
+.popup2 p{
+    font-family: sans-serif;
+    font-weight: bold;
+}
